@@ -1,30 +1,64 @@
 import React from "react";
 import styled from "styled-components";
-
+// import ValidateEmail from "./email";
+import "./form.css";
 
 export default function Form() {
-
   return (
     <Contact>
-      <form action="action_page.php">
+      <p>We will get in touch shortly.</p>
+      <ContactForm>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required />
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" />
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required />
+        <label for="contactno">Contact no</label>
+        <input type="text" name="contactno" id="contactno" />
 
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"> 
+        {/* <ValidateEmail/> */}
+        </input>
 
-        <button type="submit" class="registerbtn">Register</button>
+        <label>Questions/Comments</label>
+        <textarea />
 
-      </form>
+        <br />
+        <SubmitButton>
+          <button type="submit" class="registerbtn">
+            Register
+          </button>
+        </SubmitButton>
+      </ContactForm>
     </Contact>
-  )
+  );
 }
 
-
 const Contact = styled.div`
-    color: rgb(0,0,0);
+  padding: 30px 90px;
+  display: grid;
+  line-height: 170%;
+  justify-content:center;
+  /* align-items:center; */
+`
+const ContactForm = styled.div`
+  display: grid;
+  max-width: 90%;
+  /* align-content:center; */
+  padding: 20px 75px;
+  border-style: dashed;
+  border-color: #3ca899;
+  font-family: "Omnes";
+  box-sizing: border-box;
+  background: rgba(217, 217, 217, 0.3);
+  border: 3px dashed #3ca899;
+  border-radius: 30px;
+  line-height: 200%;
+`
+const SubmitButton = styled.div`
+  align-self:center;
+  display:grid;
+  padding-left:130px;
 `

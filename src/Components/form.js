@@ -57,12 +57,14 @@ const ContactForm = styled.div`
   border-radius: 30px;
   line-height: 200%;
 `
-const SubmitButton = styled.button`
+const SubmitButton = styled.div`
   align-self:center;
   display:grid;
   padding-left:130px;
-
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  
   :hover{
-    /* cursor: pointer; */
+    transform:translateY(-3px);
+    
   }
 `

@@ -58,7 +58,7 @@ height: 40px;
 left: 572.94px;
 top: 15px;
 
-background: #3CA899;
+background: #3ca89ae4;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 45px;
 border-style: none;
@@ -78,6 +78,29 @@ color: #FFFFFF;
 
 text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 } 
+
+button:hover{
+    /* background-color:red; */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 30px 60px rgba(23, 0, 102, 0.1),
+    inset 0px 0px 0px 0.1px rgba(255, 255, 255, 0.9);
+    transform:translateY(-0.5px);
+    background-color: rgba(60, 168, 154, 1.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* :hover { */
+    /* x,y,blur */
+    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 30px 60px rgba(23, 0, 102, 0.5),
+    inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
+    transform:translateY(-3px); */
+
+    /* animate icon as well */
+    /* .icon{
+      transform: scale(1.2);
+    }
+  } */
 
 label{
     font-family: 'Omnes', sans-serif;

@@ -1,4 +1,8 @@
-p{
+/* .contactForm{
+    background-color: red;
+} */
+
+.title{
     
 /* position: absolute; */
 width: 646px;
@@ -9,7 +13,7 @@ top: 561px;
 font-family: 'Omnes', sans-serif;
 font-style: normal;
 font-weight: 500;
-font-size: 23px;
+font-size: 22px;
 line-height: 190%;
 /* identical to box height, or 36px */
 
@@ -25,10 +29,23 @@ input{
 /* position: absolute;
 width: 1006.96px;
 height: 77px; */
-left: 202.01px;
+/* left: 202.01px;
 top: 1053px;
-height: 35px;
+height: 40px;
 background: rgb(255, 255, 255);
+border: 2px solid #3CA899;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15), inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+border-radius: 45px; */
+
+box-sizing: border-box;
+/* 
+position: absolute; */
+width: 500px;
+height: 38px;
+left: 202.01px;
+top: 755px;
+
+background: rgba(255, 255, 255, 0.8);
 border: 2px solid #3CA899;
 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15), inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 border-radius: 45px;
@@ -42,11 +59,11 @@ box-sizing: fixed;
 width: 1000px;
 height: 277px; */
 line-height:170%;
-height: 90px;
+height: 140px;
 left: 209px;
 top: 1380px;
 resize: none;
-background: rgb(255, 255, 255);
+background: rgba(255, 255, 255, 0.8);
 border: 2px solid #3CA899;
 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15), inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -104,5 +121,6 @@ button:hover{
 
 label{
     font-family: 'Omnes', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
 }
+

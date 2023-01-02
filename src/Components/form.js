@@ -6,7 +6,7 @@ import "./form.css";
 export default function Form() {
   return (
     <Contact>
-      <p>We will get in touch shortly.</p>
+      <p class='title'>We will get in touch shortly.</p>
       <ContactForm>
         <label for="name">Name</label>
         <input type="text" name="name" id="name" />
@@ -37,15 +37,16 @@ export default function Form() {
 }
 
 const Contact = styled.div`
-  padding: 30px 90px;
+  padding: 50px 90px;
   display: grid;
   line-height: 170%;
   justify-content:center;
+  /* height: 200px; */
   /* align-items:center; */
 `
 const ContactForm = styled.div`
   display: grid;
-  max-width: 90%;
+  max-width: 100%;
   /* align-content:center; */
   padding: 20px 75px;
   border-style: dashed;
@@ -55,12 +56,13 @@ const ContactForm = styled.div`
   background: rgba(217, 217, 217, 0.3);
   border: 3px dashed #3ca899;
   border-radius: 30px;
-  line-height: 200%;
+  line-height: 250%;
+  height: 700px;
 `
 const SubmitButton = styled.div`
   align-self:center;
   display:grid;
-  padding-left:130px;
+  padding-left:150px;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   
   :hover{
